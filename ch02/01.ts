@@ -59,3 +59,13 @@ function nullishCheck(a: number | undefined | null) {
 nullishCheck(1)
 nullishCheck(null)
 nullishCheck(undefined)
+
+// Unknown
+let a: any = "test"
+let aNumber = 2
+aNumber = a
+
+let u: unknown = "an unknown"
+u = 1
+let aNumber2: number;
+aNumber2 = <number>u
